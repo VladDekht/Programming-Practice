@@ -1,0 +1,11 @@
+commit 05f75179c111a80dc7d2d7431b027cdee832c612 (HEAD -> master)
+Author: Vladislav <vladislav.dekhtiarenko@yandex.ru>
+Date:   Tue Feb 6 23:41:14 2018 +0300
+
+    add task1/status.txt
+
+commit 230137a0487ce373d6f76fbcfe6be116f7313eb3
+Author: Vladislav <vladislav.dekhtiarenko@yandex.ru>
+Date:   Tue Feb 6 23:20:25 2018 +0300
+
+    add .gitignore
