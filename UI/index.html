@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Retroom Main</title>
 	<link rel="stylesheet" href="Styles/styles.css">
+	<link rel="stylesheet" href="Styles/fonts.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -15,28 +16,39 @@
 		    	<input type="text" placeholder="Search by tag.." name="search" id="search-bar">
 		      	<button type="submit" id="search-bar-button">&#128269;</button>
 			</div>
-			<button id="new-post-button"></button>
+			<div class="new-post-container">
+				<button id="new-post-button"><img src="Images/new-post-button.png" alt=""></button>
+				<p class="new-post-label">New post</p>
+			</div>
 		</header>
-		
+
+		<div class="right-menu-container">
+			<div class="menu-item-container"><button class="refresh-button btn"><img src="Images/refresh-button.png" alt=""></button></div>
+			<div class="menu-item-container"><button class="fav-button btn"><img src="Images/fav-button.png" alt=""></button></div>
+			<div class="menu-item-container"><button class="home-button btn "><img src="Images/home-button.png" alt=""></button></div>
+			<div class="menu-item-container"><button class="exit-button btn"><img src="Images/exit-button.png" alt=""></button></div>
+		</div>
 	</div>
 	
 	<div class="body-container">
 		<div class="row-of-three" id="row-1">
 			<div class="post-container" id="post-1">
-				<div class="user-info-container">
-					<div class="image-container">
-						<img src="" alt="" id="post-user-image-1">
+				<div class="post-header-container">
+					<div class="user-info-container">
+						<div class="image-container">
+							<img src="" alt="" id="post-user-image-1">
+						</div>
+						<p class="username" id="post-user-name-1">@username</p>
+						<p class="geolocation" id="post-user-geolocation-1">Geolocation</p>
 					</div>
-					<p class="username" id="post-user-name-1">@username</p>
-					<p class="geolocation" id="post-user-geolocation-1">Geolocation</p>
+					<button class="share-button"><img src="Images/share-button.png" alt=""></button>
 				</div>
-				<button class="share-button">Share</button>
 				<div class="post-image-container">
 					<img src="https://i.ytimg.com/vi/QneRXSchgbQ/maxresdefault.jpg" alt="" class="post-image">
 				</div>
 				<div class="post-footer-container">
 					<div class="like-container">
-						<button class="like-button">Like</button>
+						<button class="like-button"><img src="Images/Like.png" alt=""></button>
 					</div>
 					<div class="post-info-container">
 						<p class="tag-textbox">#tags</p>
@@ -46,20 +58,22 @@
 				</div>
 			</div>
 			<div class="post-container" id="post-2">
-				<div class="user-info-container">
-					<div class="image-container">
-						<img src="" alt="" id="post-user-image-2">
+				<div class="post-header-container">
+					<div class="user-info-container">
+						<div class="image-container">
+							<img src="" alt="" id="post-user-image-2">
+						</div>
+						<p class="username" id="post-user-name-2">@username</p>
+						<p class="geolocation" id="post-user-geolocation-2">Geolocation</p>
 					</div>
-					<p class="username" id="post-user-name-2">@username</p>
-					<p class="geolocation" id="post-user-geolocation-2">Geolocation</p>
+					<button class="share-button"><img src="Images/share-button.png" alt=""></button>
 				</div>
-				<button class="share-button">Share</button>
 				<div class="post-image-container">
 					<img src="https://sneakerfreaker-cdn.s3-accelerate.amazonaws.com/image/adidas-climacool-2-colourways-2.jpg?mtime=20170807141036" alt="" class="post-image">
 				</div>
 				<div class="post-footer-container">
 					<div class="like-container">
-						<button class="like-button">Like</button>
+						<button class="like-button"><img src="Images/Like.png" alt=""></button>
 					</div>
 					<div class="post-info-container">
 						<p class="tag-textbox">#tags</p>
@@ -69,20 +83,22 @@
 				</div>
 			</div>
 			<div class="post-container" id="post-3">
-				<div class="user-info-container">
-					<div class="image-container">
-						<img src="" alt="" id="post-user-image-3">
+				<div class="post-header-container">
+					<div class="user-info-container">
+						<div class="image-container">
+							<img src="" alt="" id="post-user-image-3">
+						</div>
+						<p class="username" id="post-user-name-3">@username</p>
+						<p class="geolocation" id="post-user-geolocation-3">Geolocation</p>
 					</div>
-					<p class="username" id="post-user-name-3">@username</p>
-					<p class="geolocation" id="post-user-geolocation-3">Geolocation</p>
+					<button class="share-button"><img src="Images/share-button.png" alt=""></button>
 				</div>
-				<button class="share-button">Share</button>
 				<div class="post-image-container">
 					<img src="https://seangoca.files.wordpress.com/2018/02/25031050357_3c087678fd_k.jpg" alt="" class="post-image">
 				</div>
 				<div class="post-footer-container">
 					<div class="like-container">
-						<button class="like-button">Like</button>
+						<button class="like-button"><img src="Images/Like.png" alt=""></button>
 					</div>
 					<div class="post-info-container">
 						<p class="tag-textbox">#tags</p>
@@ -94,20 +110,22 @@
 		</div>
 		<div class="row-of-three" id="row-2">
 			<div class="post-container" id="post-1">
-				<div class="user-info-container">
-					<div class="image-container">
-						<img src="" alt="" id="post-user-image-1">
+				<div class="post-header-container">
+					<div class="user-info-container">
+						<div class="image-container">
+							<img src="" alt="" id="post-user-image-1">
+						</div>
+						<p class="username" id="post-user-name-1">@username</p>
+						<p class="geolocation" id="post-user-geolocation-1">Geolocation</p>
 					</div>
-					<p class="username" id="post-user-name-1">@username</p>
-					<p class="geolocation" id="post-user-geolocation-1">Geolocation</p>
+					<button class="share-button"><img src="Images/share-button.png" alt=""></button>
 				</div>
-				<button class="share-button">Share</button>
 				<div class="post-image-container">
-					<img src="https://www.thedropdate.com/wp-content/uploads/2017/11/puma-suede-b-boy-5.jpg" alt="" class="post-image">
+					<img src="https://i0.wp.com/s3.amazonaws.com/eukicks/wp-content/uploads/2016/12/09051431/puma-diamond-supply-on-feet-5.jpg?resize=1200%2C800" alt="" class="post-image">
 				</div>
 				<div class="post-footer-container">
 					<div class="like-container">
-						<button class="like-button">Like</button>
+						<button class="like-button"><img src="Images/Like.png" alt=""></button>
 					</div>
 					<div class="post-info-container">
 						<p class="tag-textbox">#tags</p>
@@ -117,20 +135,22 @@
 				</div>
 			</div>
 			<div class="post-container" id="post-2">
-				<div class="user-info-container">
-					<div class="image-container">
-						<img src="" alt="" id="post-user-image-2">
+				<div class="post-header-container">
+					<div class="user-info-container">
+						<div class="image-container">
+							<img src="" alt="" id="post-user-image-2">
+						</div>
+						<p class="username" id="post-user-name-2">@username</p>
+						<p class="geolocation" id="post-user-geolocation-2">Geolocation</p>
 					</div>
-					<p class="username" id="post-user-name-2">@username</p>
-					<p class="geolocation" id="post-user-geolocation-2">Geolocation</p>
+					<button class="share-button"><img src="Images/share-button.png" alt=""></button>
 				</div>
-				<button class="share-button">Share</button>
 				<div class="post-image-container">
 					<img src="https://cdn5.kicksonfire.com/wp-content/uploads/2017/11/Pharrell-x-adidas-NMD-Hu-Trail-Multicolor-3-1-681x504.png?x76107" alt="" class="post-image">
 				</div>
 				<div class="post-footer-container">
 					<div class="like-container">
-						<button class="like-button">Like</button>
+						<button class="like-button"><img src="Images/Like.png" alt=""></button>
 					</div>
 					<div class="post-info-container">
 						<p class="tag-textbox">#tags</p>
@@ -140,20 +160,22 @@
 				</div>
 			</div>
 			<div class="post-container" id="post-3">
-				<div class="user-info-container">
-					<div class="image-container">
-						<img src="" alt="" id="post-user-image-3">
+				<div class="post-header-container">
+					<div class="user-info-container">
+						<div class="image-container">
+							<img src="" alt="" id="post-user-image-3">
+						</div>
+						<p class="username" id="post-user-name-3">@username</p>
+						<p class="geolocation" id="post-user-geolocation-3">Geolocation</p>
 					</div>
-					<p class="username" id="post-user-name-3">@username</p>
-					<p class="geolocation" id="post-user-geolocation-3">Geolocation</p>
+					<button class="share-button"><img src="Images/share-button.png" alt=""></button>
 				</div>
-				<button class="share-button">Share</button>
 				<div class="post-image-container">
 					<img src="https://asphaltgold.de/media/catalog/product/cache/1/image/930x669/9df78eab33525d08d6e5fb8d27136e95/s/a/saucony-shadow-6000-egg-hunt-pack---purple-1.jpg" alt="" class="post-image">
 				</div>
 				<div class="post-footer-container">
 					<div class="like-container">
-						<button class="like-button">Like</button>
+						<button class="like-button"><img src="Images/Like.png" alt=""></button>
 					</div>
 					<div class="post-info-container">
 						<p class="tag-textbox">#tags</p>

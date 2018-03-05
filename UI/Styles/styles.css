@@ -1,41 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Alike+Angular');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
 html{
 }
 
 body{
 	overflow-y: scroll;
+	font-family: 'Alike Angular', serif;
 }
 
 #wrapper{
 	margin: 0 auto;
+
 }
 
 header{
+	position: fixed;
+	top: 0;
+	left: 0;
 	background-color: #460e56;
 	height: 5vh;
-	width: 100%;
+	width: 200vh;
 	padding: 4px;
 	display: inline-flex;
+
 }
 
 
 #header-title{
+	font-family: 'Abril Fatface';
+	margin-left: 1.3em;
+	margin-top: 0;
 	line-height: 50px;
 	font-size: 3vh;
 	color: white;
-	margin: 0;
 }
 
 #search-bar-container{
 	display: inline-flex;
-	margin-left: 90vh;
-	height: 2em;
+	margin-left: 85vh;
+	height: 3vh;
+	margin-top: 1vh;
 }
 #search-bar{
 	float: right;
     border: 0.1em solid #ddd;
     border-radius: 0.2em 0 0 0.2em;
     font-size: 1.3vh;
-	width: 30vh;
+	width: 40vh;
+	
 	padding: 0.5em;
 	outline: 0;
 }
@@ -56,7 +69,42 @@ header{
 	border-color: #ccc;
 }
 
+.right-menu-container{
+	position: fixed;
+	display: block;
+	margin-top: 7vh;
+	margin-left: 178vh;
+}
+
+.menu-item-container{
+	margin-top: 10px;
+}
+
+#new-post-button{
+    background-color: transparent; 
+    background-repeat: no-repeat;  
+    background-position: 0px 0px;
+    border: none; 
+    cursor: pointer;
+    outline: 0;
+    margin-top: 0.2vh;
+    margin-left: 10vh;
+}
+
+.new-post-container{
+	display: inline-flex;
+	margin-left: -3vh;
+}
+
+.new-post-label{
+	font-size: 2vh;
+	color: #fff;
+	margin-top: 1.1vh;
+	font-family: 'Abril Fatface';
+}
+
 .row-of-three{
+	margin-top: 2em;
 	display: inline-flex;
 }
 
@@ -67,38 +115,51 @@ header{
 }
 
 .post-container{
-	margin-top: 1em;
-	margin: 3em 4em 3em 3em;
-	width: 30em;
-	height: 30em;
+	margin: 2em 2em 0.5em 2em;
+	width: 32em;
+	height: 32em;
 	box-shadow: 0 0 11px rgba(0,0,0,0.5);
+}
+
+.post-header-container{
+	display: inline-flex;
 }
 
 .image-container{
 	width: 4em;
 	height: 4em;
+	margin-bottom: 0.5em;
 	background-color: #ddd;
 	border-radius: 2em; 
 }
 
 .user-info-container{
+	margin-left: 0.5em;
 	padding: 0.5em 0 0 0.5em;
 	display: inline-flex;
 }
 
 .username{
+	margin-top: 0.3em;
 	margin-left: 0.5em;
 	font-size: 16px;
 }
 
 .geolocation{
-	margin-top: 2.5em;
+	margin-top: 1.6em;
 	margin-left: -4.5em;
 	color: #888;
+	font-size: 16px;
 }
 
 .share-button{
-	margin-left: 17em;
+	background-color: transparent; 
+    background-repeat: no-repeat;  
+    background-position: 0px 0px;
+    border: none; 
+    cursor: pointer;
+    outline: 0;
+	margin-left: 20em;
 }
 
 .post-image-container{
@@ -125,7 +186,25 @@ header{
 	box-shadow: 0 0 6px rgba(0,0,0,0.5);
 }
 
+.btn{
+	background-color: transparent; 
+    background-repeat: no-repeat;  
+    background-position: 0px 0px;
+    border: none; 
+    cursor: pointer;
+    outline: 0;
+}
+
 .like-button{
+	background-image: url("/Images/Like.png");
+	background-color: transparent; 
+    background-repeat: no-repeat;  
+    background-position: 0px 0px;
+    border: none; 
+    cursor: pointer;
+    outline: 0;
+    margin-top: 0.5em;
+    margin-left: 0.1em;
 }
 
 .post-footer-container{
@@ -143,7 +222,7 @@ header{
 }
 
 .date-textbox{
-	margin-left: 24em;
+	margin-left: 25em;
 	margin-right: 1em;
 	margin-top: -2.5em;
 	font-size: 0.8em;
@@ -155,7 +234,7 @@ header{
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 3em;
+	height: 3vh;
 	color: white;
 	text-align: center;
 	background-color: #460e56;
@@ -164,16 +243,17 @@ header{
 
 .footer-date{
 	margin-left: -2em;
+	margin-top: 0.2em;
 	color: #888;
 }
 
 .footer-author-info{
 	margin-left: 12em;
-	margin-top: -2.1em;
+	margin-top: -2.2em;
 	color: #888;
 }
 
 .footer-author-email{
-	margin-right: -200em;
+	margin-right: -315vh;
 	margin-top: -2.1em;
 }
