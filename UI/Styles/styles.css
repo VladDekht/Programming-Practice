@@ -1,0 +1,179 @@
+html{
+}
+
+body{
+	overflow-y: scroll;
+}
+
+#wrapper{
+	margin: 0 auto;
+}
+
+header{
+	background-color: #460e56;
+	height: 5vh;
+	width: 100%;
+	padding: 4px;
+	display: inline-flex;
+}
+
+
+#header-title{
+	line-height: 50px;
+	font-size: 3vh;
+	color: white;
+	margin: 0;
+}
+
+#search-bar-container{
+	display: inline-flex;
+	margin-left: 90vh;
+	height: 2em;
+}
+#search-bar{
+	float: right;
+    border: 0.1em solid #ddd;
+    border-radius: 0.2em 0 0 0.2em;
+    font-size: 1.3vh;
+	width: 30vh;
+	padding: 0.5em;
+	outline: 0;
+}
+
+#search-bar:hover,
+#search-bar:focus{
+	border-color: #ccc;
+}
+
+#search-bar-button{
+	font-size: inherit;
+	border: 0.1em solid #ddd;
+	border-radius: 0 0.2em 0.2em 0;
+	outline: 0;
+}
+#search-bar-button:hover{
+	background-color: #ccc;
+	border-color: #ccc;
+}
+
+.row-of-three{
+	display: inline-flex;
+}
+
+.body-container{
+	width: 70%;
+	margin-left: 4em;
+  	display: inline-box;
+}
+
+.post-container{
+	margin-top: 1em;
+	margin: 3em 4em 3em 3em;
+	width: 30em;
+	height: 30em;
+	box-shadow: 0 0 11px rgba(0,0,0,0.5);
+}
+
+.image-container{
+	width: 4em;
+	height: 4em;
+	background-color: #ddd;
+	border-radius: 2em; 
+}
+
+.user-info-container{
+	padding: 0.5em 0 0 0.5em;
+	display: inline-flex;
+}
+
+.username{
+	margin-left: 0.5em;
+	font-size: 16px;
+}
+
+.geolocation{
+	margin-top: 2.5em;
+	margin-left: -4.5em;
+	color: #888;
+}
+
+.share-button{
+	margin-left: 17em;
+}
+
+.post-image-container{
+	display: inline-flex;
+	background-color: #fff;
+	width: 99.2%;
+	height: 60%;
+	box-shadow: 0 0 11px rgba(0,0,0,0.5);
+	padding: 0.1em 0.1em 0.1em 0.1em;
+}
+
+.post-image{
+	width: 100%;
+	height: 100%;
+}
+
+.like-container{
+	width: 4em;
+	height: 4em;
+	background-color: #fff;
+	margin: 0.5em 0 0 0.5em;
+	border-width: 2px;
+	border-color: #ddd;
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+.like-button{
+}
+
+.post-footer-container{
+	display: inline-flex;
+	width: 100%;
+	height: 10vh;
+}
+
+.post-info-container{
+	margin-left: 1em;
+}
+
+.tag-textbox{
+	margin-top: 0.5em;
+}
+
+.date-textbox{
+	margin-left: 24em;
+	margin-right: 1em;
+	margin-top: -2.5em;
+	font-size: 0.8em;
+	color: #aaa;
+}
+
+.footer-container{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3em;
+	color: white;
+	text-align: center;
+	background-color: #460e56;
+	display: inline-flex;
+}
+
+.footer-date{
+	margin-left: -2em;
+	color: #888;
+}
+
+.footer-author-info{
+	margin-left: 12em;
+	margin-top: -2.1em;
+	color: #888;
+}
+
+.footer-author-email{
+	margin-right: -200em;
+	margin-top: -2.1em;
+}
