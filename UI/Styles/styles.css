@@ -11,7 +11,7 @@ body{
 
 #wrapper{
 	margin: 0 auto;
-
+	
 }
 
 header{
@@ -112,6 +112,7 @@ header{
 	width: 70%;
 	margin-left: 4em;
   	display: inline-box;
+  	
 }
 
 .post-container{
@@ -196,7 +197,6 @@ header{
 }
 
 .like-button{
-	background-image: url("/Images/Like.png");
 	background-color: transparent; 
     background-repeat: no-repeat;  
     background-position: 0px 0px;
