@@ -5,7 +5,7 @@ var module = (function(){
         id: 'String',
         description: 'String',
         createdAt: 'Date',
-        author: 'String',
+        username: 'String',
         photoLink: 'String',
         status: 'String'
     };
@@ -243,14 +243,13 @@ var module = (function(){
 	}
 
 	function deletePost(id){
-		for(let i = 0 ; i < photoPosts.lenght; i++){
-			if(photoPosts[i].status === "showing"){
+		for(let i = 0 ; i < photoPosts.length; i++){
+			if(photoPosts[i].id === id + "" && photoPosts[i].status === "showing"){
 				display = "deleted";
 				console.log("Post " + photoPosts[i].id + " deleted");
 				return true;
 			}
 		}
-		console.log("Unable to delete post " + photoPosts[i].id);
 		return false;
 	}
 
@@ -264,7 +263,7 @@ var module = (function(){
 	}
 
 	function editPost(id,editedPost){
-		var postToEdit = getPost(id);
+		var postToEdit = getPostById(id);
 		if(post != null){
 			Object.assign(postToEdit, editedPost);
 			return true;

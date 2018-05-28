@@ -38,7 +38,9 @@ header{
 
 #search-bar-container{
 	display: inline-flex;
-	margin-left: 85vh;
+	position:fixed;
+	float:left;
+	margin-left: 79em;
 	height: 3vh;
 	margin-top: 1vh;
 }
@@ -47,7 +49,7 @@ header{
     border: 0.1em solid #ddd;
     border-radius: 0.2em 0 0 0.2em;
     font-size: 1.3vh;
-	width: 40vh;
+	width: 35vh;
 	
 	padding: 0.5em;
 	outline: 0;
@@ -91,7 +93,7 @@ header{
     margin-left: 10vh;
 }
 
-.new-post-container{
+#new-post-container{
 	display: inline-flex;
 	margin-left: -3vh;
 }
@@ -256,4 +258,16 @@ header{
 .footer-author-email{
 	margin-right: -315vh;
 	margin-top: -2.1em;
+}
+
+.auth-button{
+	background-color: transparent; 
+	cursor: pointer;
+	margin: 13px 10px 10px 10px;
+    border: 0;
+    width: 80px;
+    height: 30px;
+    font-size: 1.2em;
+    color: white;
+	font-family: 'Abril Fatface';
 }
